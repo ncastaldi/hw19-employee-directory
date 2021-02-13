@@ -11,9 +11,9 @@ class Home extends Component {
     this.generateEmployeeList();
   }
 
-  generateEmployeeList = (query) => {
-    API.search(query)
-      .then((res) => this.setState({ result: res.data }))
+  generateEmployeeList = () => {
+    API.search()
+      .then((res) => console.log(res)) //this.setState({ result: res.data }))
       .catch((err) => console.log(err));
   };
 
