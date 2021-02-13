@@ -29,7 +29,7 @@ class Home extends Component {
             <table className="table">
               <thead>
                 <tr>
-                  <th scope="col">#</th>
+                  <th scope="col">Profile Picture</th>
                   <th scope="col">Name</th>
                   <th scope="col">Phone</th>
                   <th scope="col">Email</th>
@@ -39,7 +39,7 @@ class Home extends Component {
               <tbody>
                   {this.state.results.map(employee => (
                       <tr>
-                          <td><img src={employee.picture.thumbnail} alt="..."></img></td>
+                          <td><img src={employee.picture.thumbnail} alt={employee.login.uuid}></img></td>
                           <td>{employee.name.first + " " + employee.name.last}</td>
                           <td>{employee.cell}</td>
                           <td>{employee.email}</td>
