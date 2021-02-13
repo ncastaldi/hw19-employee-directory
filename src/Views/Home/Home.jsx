@@ -22,9 +22,7 @@ class Home extends Component {
     return (
       <>
         <div className="container">
-          <div className="row">
-            <Header />
-          </div>
+          <Header />
           <div className="row">
             <EmpTable empList={this.state.results} />
           </div>
