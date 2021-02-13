@@ -38,7 +38,7 @@ class Home extends Component {
               </thead>
               <tbody>
                   {this.state.results.map(employee => (
-                      <tr key={employee.id}>
+                      <tr key={employee.id.value}>
                           <td><img src={employee.picture.thumbnail} alt={employee.login.uuid}></img></td>
                           <td>{employee.name.first + " " + employee.name.last}</td>
                           <td>{employee.cell}</td>
