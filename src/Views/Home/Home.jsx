@@ -6,6 +6,12 @@ class Home extends Component {
     search: "",
   };
 
+generateEmployeeList () {
+    API.search(query)
+    .then(res => this.setState({ result: res.data}))
+    .catch(err => console.log(err));
+}
+
   render() {
     return (
       <>
