@@ -22,7 +22,7 @@ class Home extends Component {
       <>
         <div className="container">
           <div className="row">
-            <div className="col">
+            <div className="col text-center">
               <h1>Employee Directory</h1>
             </div>
           </div>
