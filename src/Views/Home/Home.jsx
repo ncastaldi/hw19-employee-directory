@@ -3,8 +3,7 @@ import API from "../../utils/API";
 
 class Home extends Component {
   state = {
-    result: {},
-    search: "",
+    results: [],
   };
 
   componentDidMount() {
@@ -13,7 +12,7 @@ class Home extends Component {
 
   generateEmployeeList = () => {
     API.search()
-      .then((res) => this.setState({ result: res.data.results })) //console.log(res.data.results))
+      .then((res) => this.setState({ results: res.data.results })) //console.log(res.data.results))
       .catch((err) => console.log(err));
   };
 
@@ -25,6 +24,30 @@ class Home extends Component {
             <div className="col text-center">
               <h1>Employee Directory</h1>
             </div>
+          </div>
+          <div className="row">
+            <table className="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Phone</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Birthday</th>
+                </tr>
+              </thead>
+              <tbody>
+                  {this.state.results.map(employee => (
+                      <tr>
+                          <td><img src={employee.picture.thumbnail} alt="..."></img></td>
+                          <td>{employee.name.first + " " + employee.name.last}</td>
+                          <td>{employee.cell}</td>
+                          <td>{employee.email}</td>
+                          <td>{employee.dob.date}</td>
+                      </tr> 
+                  ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </>
