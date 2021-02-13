@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import API from "../../utils/API";
 
 class Home extends Component {
   state = {
@@ -6,11 +7,15 @@ class Home extends Component {
     search: "",
   };
 
-generateEmployeeList = query => {
+  componentDidMount() {
+    this.generateEmployeeList();
+  }
+
+  generateEmployeeList = (query) => {
     API.search(query)
-    .then(res => this.setState({ result: res.data}))
-    .catch(err => console.log(err));
-}
+      .then((res) => this.setState({ result: res.data }))
+      .catch((err) => console.log(err));
+  };
 
   render() {
     return (
