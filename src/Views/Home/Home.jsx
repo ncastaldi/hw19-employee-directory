@@ -6,7 +6,7 @@ class Home extends Component {
     search: "",
   };
 
-generateEmployeeList () {
+generateEmployeeList = query => {
     API.search(query)
     .then(res => this.setState({ result: res.data}))
     .catch(err => console.log(err));
