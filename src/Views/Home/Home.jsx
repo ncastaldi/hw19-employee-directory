@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Header from "../../Components/Header/Header";
 import API from "../../utils/API";
 
 class Home extends Component {
@@ -21,10 +22,7 @@ class Home extends Component {
       <>
         <div className="container">
           <div className="row">
-            <div className="col text-center">
-              <h1>Employee Directory</h1>
-              <h5>Click 'Name' head to sort or use Search box to filter results</h5>
-            </div>
+            <Header />
           </div>
           <div className="row">
             <table className="table">
@@ -39,16 +37,23 @@ class Home extends Component {
                 </tr>
               </thead>
               <tbody>
-                  {this.state.results.map(employee => (
-                      <tr key={employee.id.value}>
-                          <td><img src={employee.picture.thumbnail} alt={employee.login.uuid}></img></td>
-                          <td>{employee.name.first + " " + employee.name.last}</td>
-                          <td>{employee.phone}</td>
-                          <td>{employee.cell}</td>
-                          <td><a href={`mailto:`+employee.email}>{employee.email}</a></td>
-                          <td>{employee.dob.date.substring(0, 10)}</td>
-                      </tr> 
-                  ))}
+                {this.state.results.map((employee) => (
+                  <tr key={employee.id.value}>
+                    <td>
+                      <img
+                        src={employee.picture.thumbnail}
+                        alt={employee.login.uuid}
+                      ></img>
+                    </td>
+                    <td>{employee.name.first + " " + employee.name.last}</td>
+                    <td>{employee.phone}</td>
+                    <td>{employee.cell}</td>
+                    <td>
+                      <a href={`mailto:` + employee.email}>{employee.email}</a>
+                    </td>
+                    <td>{employee.dob.date.substring(0, 10)}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
