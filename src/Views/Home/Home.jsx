@@ -38,11 +38,11 @@ class Home extends Component {
               </thead>
               <tbody>
                   {this.state.results.map(employee => (
-                      <tr>
+                      <tr key={employee.id}>
                           <td><img src={employee.picture.thumbnail} alt={employee.login.uuid}></img></td>
                           <td>{employee.name.first + " " + employee.name.last}</td>
                           <td>{employee.cell}</td>
-                          <td>{employee.email}</td>
+                          <td><a href={`mailto:`+employee.email}>{employee.email}</a></td>
                           <td>{employee.dob.date.substring(0, 10)}</td>
                       </tr> 
                   ))}
