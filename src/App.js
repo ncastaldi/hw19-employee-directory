@@ -1,8 +1,8 @@
+import Home from "./Views/Home/Home";
+
 function App() {
   return (
-    <div className="App">
-      <h1>Hello world</h1>
-    </div>
+    <Home />
   );
 }
 
