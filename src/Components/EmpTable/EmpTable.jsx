@@ -2,7 +2,6 @@ import React from "react";
 
 const EmpTable = ({ empList }) => {
   return (
-    <>
       <table className="table">
         <thead>
           <tr>
@@ -34,7 +33,6 @@ const EmpTable = ({ empList }) => {
           ))}
         </tbody>
       </table>
-    </>
   );
 };
 
