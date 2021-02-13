@@ -2,7 +2,17 @@ import React, { Component } from "react";
 
 class Home extends Component {
   render() {
-    return <h1>Hello world</h1>;
+    return (
+      <>
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <h1>Hello world</h1>
+            </div>
+          </div>
+        </div>
+      </>
+    );
   }
 }
 
