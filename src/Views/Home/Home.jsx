@@ -20,14 +20,10 @@ class Home extends Component {
 
   render() {
     return (
-      <>
-        <div className="container">
-          <Header />
-          <div className="row">
-            <EmpTable empList={this.state.results} />
-          </div>
-        </div>
-      </>
+      <div className="container">
+        <Header />
+        <EmpTable empList={this.state.results} />
+      </div>
     );
   }
 }
