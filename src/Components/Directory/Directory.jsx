@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import EmpTable from "../EmpTable/EmpTable";
 import API from "../../utils/API";
 
-class Home extends Component {
+class Directory extends Component {
   state = {
     results: [],
   };
@@ -26,4 +26,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Directory;
