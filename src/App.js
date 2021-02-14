@@ -1,8 +1,12 @@
-import Home from "./Views/Home/Home";
+import Header from "./Components/Header/Header";
+import Directory from "./Components/Directory/Directory";
 
 function App() {
   return (
-    <Home />
+    <div className="container">
+    <Header />
+    <Directory />
+  </div>
   );
 }
 

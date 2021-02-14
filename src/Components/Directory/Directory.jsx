@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Header from "../../Components/Header/Header";
-import EmpTable from "../../Components/EmpTable/EmpTable";
+import EmpTable from "../EmpTable/EmpTable";
 import API from "../../utils/API";
 
 class Home extends Component {
@@ -21,7 +20,6 @@ class Home extends Component {
   render() {
     return (
       <div className="container">
-        <Header />
         <EmpTable empList={this.state.results} />
       </div>
     );
