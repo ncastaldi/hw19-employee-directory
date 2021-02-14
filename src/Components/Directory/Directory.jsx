@@ -13,7 +13,7 @@ class Directory extends Component {
 
   generateEmployeeList = () => {
     API.search()
-      .then((res) => this.setState({ results: res.data.results })) //console.log(res.data.results))
+      .then((res) => this.setState({ results: res.data.results }))
       .catch((err) => console.log(err));
   };
 
