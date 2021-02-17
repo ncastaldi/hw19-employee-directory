@@ -17,18 +17,6 @@ For this assignment, we were asked to create a employee directory with React. Th
 
 - Site Screenshot:![./public/site-screenshot.png](./public/site-screenshot.png)
 
-## Features
-
-Offline Functionality:
-
-  * Enter deposits offline
-
-  * Enter expenses offline
-
-When brought back online:
-
-  * Offline entries are added to tracker.
-
 ## License
 
 MIT License
