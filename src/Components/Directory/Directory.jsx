@@ -32,9 +32,11 @@ class Directory extends Component {
   };
 
   handleSort = (e) => {
-    if (this.sortDir === "asc") {
-      console.log(e);
+    if (this.state.sortDir === "asc") {
       this.setState({ sortDir: "desc" });
+      this.setState({ sortedResults: this.state.results.sort(
+        //This is where the logic for sort should be.
+      ) });
     } else {
       this.setState({ sortDir: "asc" });
     }
@@ -49,7 +51,8 @@ class Directory extends Component {
             this.state.filter === ""
               ? this.state.results
               : this.state.filteredResults
-          } setSortDir={this.handleSort}
+          }
+          setSortDir={this.handleSort}
         />
       </div>
     );
