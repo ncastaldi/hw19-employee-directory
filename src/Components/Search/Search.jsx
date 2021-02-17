@@ -14,15 +14,6 @@ const Search = (props) => {
         aria-label="Recipient's username"
         aria-describedby="basic-addon2"
       />
-      <div className="input-group-append">
-        <button
-          onClick={props.handleFormSubmit}
-          className="btn btn-outline-secondary"
-          type="button"
-        >
-          Search
-        </button>
-      </div>
     </div>
   );
 };
