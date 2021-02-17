@@ -13,9 +13,9 @@ For this assignment, we were asked to create a employee directory with React. Th
 
 ## Usage
 
-- Live Site: [https://hw18-progressive-budget-njc.herokuapp.com/](https://hw18-progressive-budget-njc.herokuapp.com/)
+- Live Site: [https://www.castaldi.dev/hw19-employee-directory/](https://www.castaldi.dev/hw19-employee-directory/)
 
-- Site Screenshot:![./public/images/site-screenshot.png](./public/images/site-screenshot.png)
+- Site Screenshot:![./public/site-screenshot.png](./public/site-screenshot.png)
 
 ## Features
 
