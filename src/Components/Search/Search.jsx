@@ -9,7 +9,7 @@ const Search = (props) => {
         name="search"
         type="text"
         className="form-control"
-        placeholder="Search for an employee"
+        placeholder="Search for an employee by name"
         id="search"
         aria-label="Recipient's username"
         aria-describedby="basic-addon2"
