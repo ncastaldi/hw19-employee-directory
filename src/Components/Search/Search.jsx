@@ -2,7 +2,7 @@ import React from "react";
 
 const Search = (props) => {
   return (
-    <div class="input-group mb-3">
+    <div className="input-group mb-3">
       <input
         onChange={props.handleInputChange}
         value={props.search}
@@ -14,10 +14,10 @@ const Search = (props) => {
         aria-label="Recipient's username"
         aria-describedby="basic-addon2"
       />
-      <div class="input-group-append">
+      <div className="input-group-append">
         <button
           onClick={props.handleFormSubmit}
-          class="btn btn-outline-secondary"
+          className="btn btn-outline-secondary"
           type="button"
         >
           Search
