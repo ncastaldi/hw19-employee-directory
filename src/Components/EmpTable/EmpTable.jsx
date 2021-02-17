@@ -7,13 +7,11 @@ const EmpTable = ({ empList, setSortDir }) => {
         <thead>
           <tr>
             <th scope="col">Profile Picture</th>
-            <th scope="col">Name</th>
+            <th scope="col" onClick={setSortDir}>Name</th>
             <th scope="col">Office Phone</th>
             <th scope="col">Cell Phone</th>
             <th scope="col">Email</th>
-            <th scope="col" onClick={setSortDir}>
-              Birthday
-            </th>
+            <th scope="col" onClick={setSortDir}>Birthday</th>
           </tr>
         </thead>
         <tbody>
