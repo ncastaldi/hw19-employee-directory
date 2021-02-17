@@ -7,7 +7,9 @@ class Directory extends Component {
   state = {
     results: [],
     filteredResults: [],
+    sortedResults: [],
     filter: "",
+    sortDir: "asc",
   };
 
   componentDidMount() {
@@ -22,7 +24,19 @@ class Directory extends Component {
 
   handleInputChange = (e) => {
     this.setState({ filter: e.target.value });
-    this.setState({ filteredResults: this.state.results.filter(name => (name.name.first.includes(this.state.filter)))});
+    this.setState({
+      filteredResults: this.state.results.filter((name) =>
+        name.name.first.includes(this.state.filter)
+      ),
+    });
+  };
+
+  handleSort = (e) => {
+    if (this.sortDir === "asc") {
+      this.setState({ sortDir: "desc" });
+    } else {
+      this.setState({ sortDir: "asc" });
+    }
   };
 
   render() {
