@@ -43,4 +43,4 @@ SOFTWARE.
 
 ## Badges
 
-[![GitHub license](https://img.shields.io/github/license/ncastaldi/hw18-progressive-budget?style=for-the-badge)](https://github.com/ncastaldi/hw18-progressive-budget/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/ncastaldi/hw19-employee-directory?style=for-the-badge)](https://github.com/ncastaldi/hw19-employee-directory/blob/main/LICENSE)
