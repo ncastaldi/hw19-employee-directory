@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 
-const EmpTable = ({ empList }) => {
+const EmpTable = ({ empList, setSortDir }) => {
   return (
     <div className="row">
       <table className="table">
@@ -11,7 +11,9 @@ const EmpTable = ({ empList }) => {
             <th scope="col">Office Phone</th>
             <th scope="col">Cell Phone</th>
             <th scope="col">Email</th>
-            <th scope="col">Birthday</th>
+            <th scope="col" onClick={setSortDir}>
+              Birthday
+            </th>
           </tr>
         </thead>
         <tbody>
