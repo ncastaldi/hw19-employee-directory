@@ -21,15 +21,21 @@ class Directory extends Component {
   };
 
   handleInputChange = (e) => {
-    //this.filteredResults = this.state.results.filter((result) => (e.target.value));
-    this.setState({filter: e.target.value});
-  }
+    this.setState({ filter: e.target.value });
+    this.setState({ filteredResults: this.state.results.filter(name => (name.name.first.includes(this.state.filter)))});
+  };
 
   render() {
     return (
       <div className="container">
-        <Search filtered={this.handleInputChange}/>
-        <EmpTable empList={this.state.filter === ""?this.state.results:this.state.filteredResults} />
+        <Search filtered={this.handleInputChange} />
+        <EmpTable
+          empList={
+            this.state.filter === ""
+              ? this.state.results
+              : this.state.filteredResults
+          }
+        />
       </div>
     );
   }
