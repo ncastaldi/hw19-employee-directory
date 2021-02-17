@@ -2,9 +2,7 @@
 
 ## Description
 
-For this assignment, we were asked to to add functionality to the existing Budget Tracker application to allow for offline access and functionality.
-
-In this app, the user will be able to add expenses and deposits to their budget with or without a Internet connection. When entering transactions offline, entries should populate the total when brought back online.
+For this assignment, we were asked to create a employee directory with React. This assignment required us to break up your application's UI into components, manage component state, and respond to user events.
 
 ## Table of Contents
 
